@@ -26,7 +26,7 @@
 }
 
 body {
-  padding: 50px;
+  padding-top: 50px;
   background-color: var(--primaryColor);
   color: var(--mainWhite);
   line-height: 1.4;
@@ -57,3 +57,25 @@ h3 {
   font-size: 1em;
   font-weight: 1.5em;
 }
+
+.container {
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Hero image */
+.defaultHero,
+.roomsHero {
+  min-height: calc(100vh - 100px);
+  background: url("https://res.cloudinary.com/danieltisue/image/upload/v1633889015/Bough_and_Pine/jesse-donoghoe-optimized-unsplash.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: visible;
+}
+.roomsHero {
+  background-image: url("https://res.cloudinary.com/danieltisue/image/upload/v1633889015/Bough_and_Pine/jesse-donoghoe-optimized-unsplash.jpg");
+  min-height: 60vh;
+}
+/* End of Hero image */
