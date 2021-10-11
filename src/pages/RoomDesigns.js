@@ -1,9 +1,13 @@
-import React from 'react'
 
-export default function RoomDesigns() {
+function RoomDesigns() {
   return (
     <div className="container">
       Room Designs
     </div>
   )
 }
+
+export default RoomDesigns;
+
+
+

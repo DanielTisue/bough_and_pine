@@ -1,9 +1,13 @@
-import React from 'react'
 
-export default function Error() {
+function Error() {
   return (
-    <div className="container">
+   <div className="container">
       Error Page
     </div>
   )
 }
+
+export default Error;
+
+
+
