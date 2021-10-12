@@ -22,9 +22,18 @@ function Navbar() {
           </Link>
         </div>
         <div className="nav-main-right">
-          
+          <Link className="nav-links right" to='/'>
+          Logo
+          </Link>
+          <Link className="nav-links right" to='/'>
+          Logo
+          </Link>
+          <Link className="nav-links right" to='/'>
+          Logo
+          </Link>
+          <button  className='nav-btn'>
             <FiAlignRight className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} />
-          
+          </button>
         </div>
       </div>
 
