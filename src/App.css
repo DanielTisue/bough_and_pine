@@ -96,22 +96,26 @@ h3 {
 }
 
 .nav-btn {
+  position: relative;
   display: none;
   background: transparent;
   border: none;
   cursor: pointer;
   outline: none;
+  z-index: 3;
 }
 
-.nav-btn .open {
+.open {
   transform: rotate(90deg);
   transition: all ease-in-out .3s; 
 }
 
 .nav-icon {
+  position: relative;
   font-size: 1.75rem;
   color: var(--mainBlack);
   transition: all ease-in-out .3s;
+  z-index: 3;
 }
 
 .nav-links {
@@ -127,6 +131,38 @@ h3 {
 .nav-links.right {
   margin: 0 1rem;
 }
+
+.navBar-items {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-evenly;
+ background-color: var(--mainWhite);
+ position: fixed;
+ top: 0;
+ right: 0;
+ height: 100vh;
+ width: 100vw;
+ z-index: 2;
+ transform: translateX(100%);
+ transition: all .5s ease-in-out;
+}
+
+.open-menu {
+  transform: translateX(0%);
+}
+
+/* .navBar-link-item {
+  padding: 1rem 0;
+} */
+
+.navBar-link {
+ text-decoration: none;
+ color: var(--mainBlack);
+ font-weight: bold;
+}
+
     /* Navbar media queries start */
 @media screen and (max-width: 768px) {
   .nav-btn {
@@ -136,6 +172,8 @@ h3 {
   .nav-links.right {
     display: none;
   }
+
+
  
 }
 
