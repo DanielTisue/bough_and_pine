@@ -1,6 +1,10 @@
 import { useState } from 'react';
 // import logo from '../images/logo.svg';
-import { FiAlignRight } from 'react-icons/fi';
+// import { FiAlignRight } from 'react-icons/fi';
+// import { FaBarcode } from 'react-icons/fa';
+// import { BiBarChart } from "react-icons/bi";
+import { VscListSelection } from "react-icons/vsc";
+
 import { Link } from 'react-router-dom';
 import  { Navlinks } from './NavbarData';
 
@@ -33,7 +37,11 @@ function Navbar() {
           Logo
           </Link>
           <button  className='nav-btn'>
-            <FiAlignRight className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} />
+            {/* <p className="p2">MENU</p> */}
+            <VscListSelection className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} />
+            {/* <BiBarChart className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} /> */}
+            {/* <FaBarcode className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} /> */}
+            {/* <FiAlignRight className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} /> */}
           </button>
         </div>
 
