@@ -44,7 +44,7 @@ function Navbar() {
             {/* <FiAlignRight className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} /> */}
           </button>
         </div>
-
+        
          <ul className={openMenu ? 'navBar-items open-menu' : 'navBar-items'} onClick={showOpen}>
               {Navlinks.map((navlink) => {
                 return <li className="navBar-link-item" key={navlink.id}><a className="navBar-link" href={navlink.url} key={navlink.id}>{navlink.text}</a></li>
