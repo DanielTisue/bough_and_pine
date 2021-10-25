@@ -14,5 +14,10 @@ export const Navlinks = [
     id: 3,
     text: 'How it Works',
     url: 'http://localhost:3000/'
+  },
+  {
+    id: 4,
+    text: "Let's Connect",
+    url: 'http://localhost:3000/'
   }
 ]
