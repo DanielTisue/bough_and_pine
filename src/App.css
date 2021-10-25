@@ -52,6 +52,7 @@ h2 {
   letter-spacing: 8px;
   color: var(--secondaryColor);
   font-weight: 400;
+  opacity: .7;
 }
 
 /* h3 {
@@ -168,7 +169,6 @@ h2 {
 
 .nav-btn {
   position: relative;
-  display: none;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -176,8 +176,15 @@ h2 {
   z-index: 3;
 }
 
+.p2-nav {
+  color: var(--secondaryBlack);
+  /* color: var(--mainWhite); */
+  font-size: .8em;
+  line-height: 1.3em; 
+}
+
 .open {
-  transform: rotate(90deg) !important;
+  color: var(--secondaryColor) !important;
   transition: all ease-in-out .3s; 
 }
 
@@ -223,31 +230,22 @@ list-style:  none;
  transition: all .5s ease-in-out;
 }
 
-
-
 .open-menu {
   transform: translateX(0%);
 }
 
 .navBar-link {
  font-family: "Roboto", sans-serif;
- font-size: .875rem;
+ font-size: 1rem;
  text-decoration: none;
  color: var(--primaryBlack);
  font-weight: bold;
 }
 
-  /* Navbar media queries start */
-@media screen and (max-width: 768px) {
-  .nav-btn {
-    display: block;
-  }
-
-  .nav-links.right {
-    display: none;
-  }
-
+.naBar-link:active {
+  color: var(--secondaryColor);
 }
+
 
 @media screen and (max-width: 480px) {
   .nav-main {
@@ -275,12 +273,13 @@ list-style:  none;
 .banner-text-wrapper {
   width: 100%;
   max-width: 900px;
-  /* height: 100%; */
+  max-height: 50vh;
   padding: 25px;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   text-transform: capitalize;
 }
 
@@ -313,13 +312,12 @@ list-style:  none;
 
 .services {
   padding: 25px 0;
-  height: 100vh;
   text-align: center;
-  background-color: var(--mainGrey);
+  min-height: 50vh;
 }
 
 .services-center {
-  width: 90vw;
+  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -327,23 +325,25 @@ list-style:  none;
   grid-column-gap: 50px;
 }
 
-.services-headline {
-  padding-bottom: 100px;
-}
-
 .service {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  padding: 50px 15px;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
 }
 
 .services-title {
-  font-size: 2em;
-  margin-bottom: -2rem;
+  font-size: 2.5em;
+  margin-bottom: -2.5rem;
+  color: var(--secondaryBlack);
+  opacity: .7;
 }
 
 .services-subtitle {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .services-text {

@@ -1,10 +1,4 @@
 import { useState } from 'react';
-// import logo from '../images/logo.svg';
-// import { FiAlignRight } from 'react-icons/fi';
-// import { FaBarcode } from 'react-icons/fa';
-// import { BiBarChart } from "react-icons/bi";
-import { VscListSelection } from "react-icons/vsc";
-
 import { Link } from 'react-router-dom';
 import  { Navlinks } from './NavbarData';
 
@@ -27,21 +21,8 @@ function Navbar() {
           </Link>
         </div>
         <div className="nav-main-right">
-          <Link className="nav-links right" to='/'>
-          Logo
-          </Link>
-          <Link className="nav-links right" to='/'>
-          Logo
-          </Link>
-          <Link className="nav-links right" to='/'>
-          Logo
-          </Link>
           <button  className='nav-btn'>
-            {/* <p className="p2">MENU</p> */}
-            <VscListSelection className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} />
-            {/* <BiBarChart className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} /> */}
-            {/* <FaBarcode className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} /> */}
-            {/* <FiAlignRight className={open ? 'nav-icon open' : 'nav-icon'} onClick={showOpen} /> */}
+            <p className={open ? 'p2-nav open' : 'p2-nav'} onClick={showOpen}>Menu</p>
           </button>
         </div>
         

@@ -4,7 +4,6 @@ function Services() {
   return (
     <>
       <section className="services">
-        <h1 className="title services-headline">Services</h1>
         <div className="services-center">
           {ServicesData.map((services, index) => {
                 return <article className="service" key={services.id}>
@@ -14,7 +13,6 @@ function Services() {
                        </article>
               })}
         </div>
-
       </section>
     </>
   )
