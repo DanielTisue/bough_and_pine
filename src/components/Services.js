@@ -3,7 +3,7 @@ import { ServicesData } from './ServicesData';
 function Services() {
   return (
     <>
-      <section className="services">
+     
         <div className="services-center">
           {ServicesData.map((services, index) => {
                 return <article className="service" key={services.id}>
@@ -13,7 +13,7 @@ function Services() {
                        </article>
               })}
         </div>
-      </section>
+      
     </>
   )
 }
