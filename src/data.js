@@ -2,6 +2,8 @@
 // import bedroomimg2 from "./images/bedroomimg2.jpg";
 // import hallwayimg1 from "./images/hallwayimg1.jpg";
 // import hallwayimg2 from "./images/hallwayimg2.jpg";
+// import bathimg1 from "./images/bathimg1.jpg";
+// import bathimg2 from "./images/bathimg2.jpg";
 // import livingimg1 from "./images/room-1.jpg";
 // import livingimg2 from "./images/room-2.jpg";
 // import livingimg3 from "./images/room-3.jpg";
@@ -16,25 +18,22 @@
 // import officeimg2 from "./images/officeimg2.jpg";
 // import officeimg3 from "./images/officeimg3.jpg";
 // import officeimg4 from "./images/officeimg4.jpg";
-// import treeofficeimg1 from "./images/treeofficeimg1.jpg";
-// import treeofficeimg2 from "./images/treeofficeimg2.jpg";
-// import treeofficeimg3 from "./images/treeofficeimg3.jpg";
-// import treeofficeimg4 from "./images/treeofficeimg4.jpg";
-// import treeofficeimg5 from "./images/treeofficeimg5.jpg";
-// import treeofficeimg6 from "./images/treeofficeimg6.jpg";
-// import banisterimg1 from "./images/banisterimg1.jpg";
-// import banisterimg2 from "./images/banisterimg2.jpg";
-// import frontdeskimg1 from "./images/frontdeskimg1.jpg";
-// import frontdeskimg2 from "./images/frontdeskimg2.jpg";
-// import frontdeskimg3 from "./images/frontdeskimg3.jpg";
-// import fireplaceimg1 from "./images/fireplaceimg1.jpg";
-// import bathimg1 from "./images/bathimg1.jpg";
-// import bathimg2 from "./images/bathimg2.jpg";
-// import treehomeimg5 from "./images/treehomeimg5.jpg";
-// import treehomeimg6 from "./images/treehomeimg6.jpg";
-// import treehomeimg7 from "./images/treehomeimg5.jpg";
-// import treehomeimg8 from "./images/treehomeimg6.jpg";
-// import christmashomefull from "./images/christmashomefull.jpg";
+ import treeofficeimg1 from "./images/treeofficeimg1.jpg";
+ import treeofficeimg2 from "./images/treeofficeimg2.jpg";
+ import treeofficeimg3 from "./images/treeofficeimg3.jpg";
+ import treeofficeimg4 from "./images/treeofficeimg4.jpg";
+ import treeofficeimg5 from "./images/treeofficeimg5.jpg";
+ import banisterimg1 from "./images/banisterimg1.jpg";
+ import banisterimg2 from "./images/banisterimg2.jpg";
+ import frontdeskimg1 from "./images/frontdeskimg1.jpg";
+ import frontdeskimg2 from "./images/frontdeskimg2.jpg"; 
+ import frontdeskimg3 from "./images/frontdeskimg3.jpg";
+ import fireplaceimg1 from "./images/fireplaceimg1.jpg";
+ import treehomeimg5 from "./images/treehomeimg5.jpg";
+ import treehomeimg6 from "./images/treehomeimg6.jpg";
+ import treehomeimg7 from "./images/treehomeimg5.jpg";
+ import treehomeimg8 from "./images/treehomeimg6.jpg";
+ import christmashomefull from "./images/christmashomefull.jpg";
 
 
 
@@ -276,8 +275,8 @@ export default [
       id: "8"
     },
     fields: {
-      name: "tree",
-      slug: "christmas-tree",
+      name: "christmas",
+      slug: "christmas",
       type: "seasonal" && "home" || "seasonal" && "office" || "seasonal",
       images: [
         {
@@ -311,6 +310,13 @@ export default [
         {
           fields: {
             file: {
+              url: treeofficeimg5
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
               url: treehomeimg5
             }
           }
@@ -319,13 +325,6 @@ export default [
           fields: {
             file: {
               url: treehomeimg6
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: christmashomefull
             }
           }
         },
@@ -343,18 +342,13 @@ export default [
             }
           }
         },
-      ]
-    }
-  },
-   {
-    sys: {
-      id: "9"
-    },
-    fields: {
-      name: "banister",
-      slug: "christmas-banister",
-      type: "seasonal" && "home" || "home" || "seasonal",
-      images: [
+        {
+          fields: {
+            file: {
+              url: christmashomefull
+            }
+          }
+        },
         {
           fields: {
             file: {
@@ -369,18 +363,13 @@ export default [
             }
           }
         },
-      ]
-    }
-  },
- {
-    sys: {
-      id: "10"
-    },
-    fields: {
-      name: "frontdesk",
-      slug: "christmas-frontdesk",
-      type: "seasonal" && "office" || "office" || "seasonal",
-      images: [
+         {
+          fields: {
+            file: {
+              url: fireplaceimg1
+            }
+          }
+        },
         {
           fields: {
             file: {
@@ -401,27 +390,8 @@ export default [
               url: frontdeskimg3
             }
           }
-        },        
+        },  
       ]
     }
   },
-  {
-    sys: {
-      id: "11"
-    },
-    fields: {
-      name: "fireplace",
-      slug: "christmas-fireplace",
-      type: "seasonal" && "home" || "home" || "seasonal",
-      images: [
-        {
-          fields: {
-            file: {
-              url: fireplaceimg1
-            }
-          }
-        },
-      ]
-    }
-  }
 ];
