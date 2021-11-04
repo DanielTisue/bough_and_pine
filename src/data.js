@@ -1,14 +1,17 @@
 // import bedroomimg1 from "./images/bedroomimg1.jpg";
 // import bedroomimg2 from "./images/bedroomimg2.jpg";
-// import hallwayimg1 from "./images/hallwayimg1.jpg";
-// import hallwayimg2 from "./images/hallwayimg2.jpg";
+import hallwayimg1 from "./images/hallwayimg1.jpg";
+import hallwayimg2 from "./images/hallwayimg2.jpg";
 // import bathimg1 from "./images/bathimg1.jpg";
 // import bathimg2 from "./images/bathimg2.jpg";
-// import livingimg1 from "./images/room-1.jpg";
-// import livingimg2 from "./images/room-2.jpg";
-// import livingimg3 from "./images/room-3.jpg";
-// import livingimg4 from "./images/room-4.jpg";
-// import diningimg1 from "./images/room-5.jpg";
+import livingimg1 from "./images/livingimg1.jpg";
+import livingimg2 from "./images/livingimg2.jpg";
+import livingimg3 from "./images/livingimg3.jpg";
+import shelfimg1 from "./images/shelfimg1.jpg";
+import shelfimg2 from "./images/shelfimg2.jpg";
+import shelfimg3 from "./images/shelfimg3.jpg";
+import fireplaceimg2 from "./images/fireplaceimg2.jpg";
+import diningimg1 from "./images/diningimg1.jpg";
 // import diningimg2 from "./images/room-6.jpg";
 // import babyimg1 from "./images/babyimg1";
 // import babyimg2 from "./images/babyimg3";
@@ -128,7 +131,28 @@ export default [
         {
           fields: {
             file: {
-              url: livingimg4
+              url: shelfimg1
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: shelfimg2
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: shelfimg3
+            }
+          }
+        },
+        {
+          fields: {
+            file: {
+              url: fireplaceimg2
             }
           }
         },
