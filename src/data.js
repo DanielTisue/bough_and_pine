@@ -39,7 +39,7 @@ import diningimg1 from "./images/diningimg1.jpg";
  import christmashomefull from "./images/christmashomefull.jpg";
 
 
-
+// eslint-disable-next-line
 export default [
   {
     sys: {
@@ -50,22 +50,21 @@ export default [
       slug: "bedroom",
       type: "home",
       featured: false,
-      description:"TBD",
       images: [
-        {
-          fields: {
-            file: {
-              url: bedroomimg1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: bedroomimg2
-            }
-          }
-        },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: bedroomimg1
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: bedroomimg2
+        //     }
+        //   }
+        // },
         
       ]
     }
@@ -78,7 +77,7 @@ export default [
       name: "entry-hallway",
       slug: "entry-hallway",
       type: "home",
-      featured: false,
+      featured: true,
       images: [
         {
           fields: {
@@ -105,7 +104,7 @@ export default [
       name: "living-room",
       slug: "living-room",
       type: "home",
-      featured: false,
+      featured: true,
       images: [
         {
           fields: {
@@ -176,13 +175,13 @@ export default [
             }
           }
         },
-        {
-          fields: {
-            file: {
-              url: diningimg2
-            }
-          }
-        },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: diningimg2
+        //     }
+        //   }
+        // },
       ]
     }
   },
@@ -196,34 +195,34 @@ export default [
       type: "home",
       featured: true,
       images: [
-        {
-          fields: {
-            file: {
-              url: babyimg1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: babyimg2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: babyimg3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: babyimg4
-            }
-          }
-        },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: babyimg1
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: babyimg2
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: babyimg3
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: babyimg4
+        //     }
+        //   }
+        // },
       ]
     }
   },
@@ -237,20 +236,20 @@ export default [
       type: "home",
       featured: false,
       images: [
-        {
-          fields: {
-            file: {
-              url: bathimg1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: bathimg2
-            }
-          }
-        },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: bathimg1
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: bathimg2
+        //     }
+        //   }
+        // },
       ]
     }
   },
@@ -261,36 +260,37 @@ export default [
     fields: {
       name: "office",
       slug: "office",
-      type: "home" || "office",
+      type: "home",
+      // "home" || "office",
       images: [
-        {
-          fields: {
-            file: {
-              url: officeimg1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: officeimg2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: officeimg3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: officeimg4
-            }
-          }
-        }
+        // {
+        //   fields: {
+        //     file: {
+        //       url: officeimg1
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: officeimg2
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: officeimg3
+        //     }
+        //   }
+        // },
+        // {
+        //   fields: {
+        //     file: {
+        //       url: officeimg4
+        //     }
+        //   }
+        // }
       ]
     }
   },
@@ -301,7 +301,8 @@ export default [
     fields: {
       name: "christmas",
       slug: "christmas",
-      type: "seasonal" && "home" || "seasonal" && "office" || "seasonal",
+      type: "seasonal",
+      // "seasonal" && "home" || "seasonal" && "office" || "seasonal",
       images: [
         {
           fields: {
