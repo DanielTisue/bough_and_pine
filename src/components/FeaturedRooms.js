@@ -6,12 +6,13 @@ export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
 
   render() {
-    const {featuredRooms : rooms} = this.context;
-    console.log(rooms);
+    let { loading, featuredRooms : rooms } = this.context;
+    rooms = rooms.map(room => {
+      return <Room key={room.id} room={room} />
+    })
     return (
-     <div>
-        <Room />
-        <Loading />
+     <div className="featured-images-section">
+        { loading ? <Loading /> : rooms }
       </div>
     );
   }
