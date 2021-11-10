@@ -26,8 +26,8 @@
 
 body {
   padding-top: 50px;
-  background-color: var(--primaryColor);
-  color: var(--mainWhite);
+  background-color: var(--mainWhite);
+  color: var(--primaryColor);
   line-height: 1.4;
 }
 
@@ -179,14 +179,14 @@ h2 {
 }
 
 .p2-nav {
-  color: var(--secondaryBlack);
+  color: var(--secondaryColor);
   /* color: var(--mainWhite); */
   font-size: .8em;
   line-height: 1.3em; 
 }
 
 .open {
-  color: var(--secondaryColor) !important;
+  /* color: var(--secondaryColor) !important; */
   transition: all ease-in-out .3s; 
 }
 
@@ -289,7 +289,7 @@ list-style:  none;
 .title {
   position: relative;
   z-index: 0;
-  color: var(--mainWhite);
+  color: var(--primaryColor);
   font-size: 5rem;
   line-height: 5.2rem;
 }
@@ -352,7 +352,24 @@ list-style:  none;
 
 /* Work start */
 .work {
-  height: 100vh;
+  height: 100%;
+}
+
+.featured-images-section {
+  width: 100%;
+  /* margin-left: -100px; */
+  /* min-width: 1100px; */
+  max-width: 1500px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.image-style {
+  height: 100%;
+  max-height: 400px;
+  margin: 0 10px;
 }
 /* Work end */
 
@@ -378,7 +395,7 @@ list-style:  none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: var(--primaryColor);
   padding: 50px 15px;
   margin-top: -5rem;
   margin-bottom: 75px;
