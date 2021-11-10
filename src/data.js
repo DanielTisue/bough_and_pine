@@ -193,7 +193,7 @@ export default [
       name: "baby-room",
       slug: "baby-room",
       type: "home",
-      featured: true,
+      featured: false,
       images: [
         // {
         //   fields: {
@@ -261,6 +261,7 @@ export default [
       name: "office",
       slug: "office",
       type: "home",
+      featured: false,
       // "home" || "office",
       images: [
         // {
@@ -302,6 +303,7 @@ export default [
       name: "christmas",
       slug: "christmas",
       type: "seasonal",
+      featured: true,
       // "seasonal" && "home" || "seasonal" && "office" || "seasonal",
       images: [
         {
