@@ -38,8 +38,8 @@ a {
 
 h1 {
   font-family: 'Cinzel', serif;
-  font-size: 6em;
-  line-height: 1.5em;
+  /* font-size: 6em;
+  line-height: 1.5em; */
   color: var(--secondaryBlack);
   font-weight: 400;
   text-transform: uppercase;
@@ -47,8 +47,8 @@ h1 {
 
 h2 {
   font-family: 'Mrs Saint Delafield', cursive;
-  font-size: 6em;
-  line-height: 2em;
+  /* font-size: 6em;
+  line-height: 2em; */
   letter-spacing: 8px;
   color: var(--secondaryColor);
   font-weight: 400;
@@ -97,10 +97,10 @@ h2 {
   text-align: center;
 }
 
-.text-container {
+/* .text-container {
   max-width: 300px;
   margin: 0 auto;
-}
+} */
 
   /* Global media queries start */
   @media screen and (max-width: 480px) {
@@ -261,19 +261,67 @@ list-style:  none;
 .landingHero {
   min-height: calc(100vh - 50px);
   background: linear-gradient(rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.48)), url("https://res.cloudinary.com/danieltisue/image/upload/v1633889015/Bough_and_Pine/jesse-donoghoe-optimized-unsplash.jpg") center/cover no-repeat;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* overflow-x: visible; */
+  
 }
-/* .bannerHero {
-  background-image: url("https://res.cloudinary.com/danieltisue/image/upload/v1633889015/Bough_and_Pine/jesse-donoghoe-optimized-unsplash.jpg");
-  min-height: 60vh;
-} */
+
 /* Hero image & text end */
 
-/* Banner start */
+/* Banner start ALT*/
 .banner-text-wrapper {
+  width: 100%;
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, auto);
+  margin: 0 auto;
+}
+
+.title-one, .title-two, .subtitle, .banner-text, .div1 {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.title-one {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  text-align: left;
+  font-size: 3rem;
+  padding: 30px 0;
+  color: var(--primaryColor);
+  /* text-shadow: 1px 1px 3px #d2d2d2; */
+}
+
+.title-two {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+  font-size: 3rem;
+  margin-top: -10px;
+  padding: 20px;
+  color: var(--primaryColor);
+  /* text-shadow: 1px 1px 3px #d2d2d2; */
+}
+
+.subtitle {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  font-size: 4rem;
+}
+
+.banner-text {
+  font-size: .8em;
+  line-height: 1.3em;
+  color: var(--secondaryBlack);
+  grid-row: 4 / 6;
+  grid-column: 1/ 6;
+  padding: 50px 25px;
+  text-align: left;
+}
+
+/* Banner end ALT*/
+
+/* Banner start */
+
+/* .banner-text-wrapper {
   width: 100%;
   max-width: 900px;
   max-height: 50vh;
@@ -284,9 +332,9 @@ list-style:  none;
   justify-content: center;
   align-items: center; 
   text-transform: capitalize;
-}
+} */
 
-.title {
+/* .title {
   position: relative;
   z-index: 0;
   color: var(--primaryColor);
@@ -305,14 +353,11 @@ list-style:  none;
   z-index: 0;
   top: -8rem;
   text-align: left !important;
-}
+} */
 
-.banner-link {
-  color: var(--secondaryColor);
-}
 /* MQ Banner start */
 @media screen and (max-width:798px) {
-  .title {
+  /* .title {
   position: relative;
   z-index: 0;
   color: var(--mainWhite);
@@ -331,12 +376,12 @@ list-style:  none;
     z-index: 0;
     top: 1rem;
     text-align: left !important;
-  }
+  } */
 
 }
 
 @media screen and (max-width:480px) {
-  .title {
+  /* .title {
     font-size: 3.5rem;
     line-height: 3.7rem;
   }
@@ -344,7 +389,7 @@ list-style:  none;
   .subtitle {
     font-size: 4rem;
     margin-top: 3.2rem;
-  }
+  } */
 }
 /* MQ Banner end */
 /* Banner end */
@@ -353,12 +398,25 @@ list-style:  none;
 /* Work start */
 .work {
   height: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 0;
 }
 
-.featured-images-section {
+.right-section, .left-section {
+  width: 50%;
+}
+
+.main-image {
+  max-height: 450px;
+  padding-left: 50px;
+  margin-left: 20px;
+  overflow-x: visible;
+}
+/* .featured-images-section {
   width: 100%;
-  /* margin-left: -100px; */
-  /* min-width: 1100px; */
   max-width: 1500px;
   overflow: visible;
   display: flex;
@@ -370,7 +428,7 @@ list-style:  none;
   height: 100%;
   max-height: 400px;
   margin: 0 10px;
-}
+} */
 /* Work end */
 
 /* Services start */
@@ -378,7 +436,7 @@ list-style:  none;
   padding: 25px 0;
   text-align: center;
   height: 100%;
-  /* max-height: 100vh; */
+  min-height: 100vh;
 }
 
 .services-center {
