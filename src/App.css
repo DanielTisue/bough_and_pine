@@ -39,6 +39,7 @@ a {
 h1 {
   font-family: 'Cinzel', serif;
   font-size: 6em;
+  line-height: 1.2em;
   color: var(--secondaryBlack);
   font-weight: 400;
   text-transform: uppercase;
@@ -284,6 +285,7 @@ list-style:  none;
   grid-row: 1 / 2;
   text-align: left;
   font-size: 4rem;
+  line-height: 1rem;
   padding: 30px 0;
   color: var(--primaryColor);
 }
@@ -292,6 +294,7 @@ list-style:  none;
   grid-column: 3 / 5;
   grid-row: 3 / 4;
   font-size: 4rem;
+  line-height: 1rem;
   margin-top: -10px;
   padding: 20px;
   color: var(--primaryColor);
