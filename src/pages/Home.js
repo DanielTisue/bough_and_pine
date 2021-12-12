@@ -13,7 +13,7 @@ export default function Home() {
          <h1>Title</h1>
         </div>
       </Hero>
-      <div className="container-center">
+      <div className="container-center visible scrollbar-hidden">
         <section className="work">
           <div className="left-section">
           <Banner title1="Artistic" title2="Touch" bannerSubtitle="Work" bannerText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
