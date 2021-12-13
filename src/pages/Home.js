@@ -1,9 +1,10 @@
 import Banner from '../components/Banner';
+import BannerLong from '../components/BannerLong';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import mainImage from '../images/livingimg3.jpg';
 import Title from '../components/Title';
-import FeaturedRooms from '../components/FeaturedRooms';
+// import FeaturedRooms from '../components/FeaturedRooms';
 
 export default function Home() {
   return (
@@ -26,16 +27,19 @@ export default function Home() {
           <Title title="What we offer" subtitle="Services" />
           <Services />
         </section>
+    </div>
+        <section className="cta">
+          <Title title={`Let's Design`} subtitle="Consultation" />
+          <a id="cta-text" href="#contact">Book now</a>
+        </section>
+    <div className="container-center visible scrollbar-hidden">
         <section className="process">
-          <Title title="Design Practice" subtitle="Technique" />
-          
-          {/* Have too change left/right width and image padding/margin */}
-          {/* <div className="left-section">
-          <img className="main-image" src={mainImage} />
+          <div className="left">
+          <img className="second-main-image" src={mainImage} />
           </div>
-           <div className="right-section">
-          <Banner title1="Design" title2="Practice" bannerSubtitle="Technique" bannerText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
-          </div> */}
+           <div className="right">
+          <BannerLong title1="Design" title2="Practice" bannerSubtitle="Technique" bannerText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
+          </div>
         </section>
         <section className="contact">
           <Title title="Let's work together" subtitle="Collaborate" />
