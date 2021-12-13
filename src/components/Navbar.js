@@ -11,8 +11,22 @@ function Navbar() {
     setOpenMenu(!openMenu)
   };
 
+  const [colorChange, setColorchange] = useState(false);
+  const [menuColor, setMenuColor] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 60){
+       setColorchange(true);
+       setMenuColor(true);
+     }
+     else{
+       setColorchange(false);
+       setMenuColor(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
   return (
-    <nav className="navbar">
+    <nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
       <div className="navbar-center">
         <div className="nav-main">
         <div className="nav-main-left">
