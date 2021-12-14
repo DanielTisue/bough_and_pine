@@ -29,7 +29,7 @@ export default function Home() {
         </section>
     </div>
         <section className="cta">
-          <Title title={`Let's Design`} subtitle="Consultation" />
+          <Title title="Let's Design" subtitle="Consultation" />
           <a id="cta-text" href="#contact">Book now</a>
         </section>
     <div className="container-center visible scrollbar-hidden">
@@ -41,10 +41,31 @@ export default function Home() {
           <BannerLong title1="Design" title2="Practice" bannerSubtitle="Technique" bannerText="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry." />
           </div>
         </section>
-        <section className="contact">
-          <Title title="Let's work together" subtitle="Collaborate" />
+    </div>
+        <section className="cta cta2">
+          <Title title="What to Expect" subtitle="The How" />
+          <div className="expect">
+            <ul className="expect-wrapper">
+              <li className="expect-wrapper-item">
+                <h1 class="cta2-title">01</h1>
+                <p className="p2">Book a call and discuss options</p>
+              </li>
+              <li className="expect-wrapper-item">
+                <h1 class="cta2-title">02</h1>
+                <p className="p2">Be ready to <br/> answer questions</p>
+              </li>
+              <li className="expect-wrapper-item">
+                <h1 class="cta2-title">03</h1>
+                <p className="p2" >Be ready to <br/> answer questions</p>
+              </li>
+            </ul>
+          </div>
         </section>
-      </div>
+    <div className="container-center visible scrollbar-hidden">
+        <section className="contact">
+          <Title title="Let's Talk" subtitle="Collaborate" />
+        </section>
+    </div>
     </>
   )
 }
