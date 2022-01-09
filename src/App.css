@@ -26,6 +26,8 @@
 
 body {
   padding-top: 50px;
+  /* background: rgb(193, 154, 91); */
+  background: linear-gradient(180deg, rgba(193, 154, 91, .8) 0%, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 1) 100%);
   background-color: var(--mainWhite);
   color: var(--primaryColor);
   line-height: 1.4;
@@ -127,7 +129,9 @@ h2 {
   @media only screen 
   and (max-width: 1024px) {
     .container-center.visible {
-      overflow-x: hidden;
+      overflow-x: hidden !important;
+      margin: 0;
+      max-width: 100%;
     }  
   }
 
@@ -175,9 +179,7 @@ h2 {
   left: 0;
   width: 100%;
   padding: .8rem 0;
-  background-color: rgba(193, 154, 91, .5);
-  /* background-color: transparent; */
-  /* background-color: var(--primaryColor); */
+  background-color: rgba(193, 154, 91, .4);
   color: var(--primaryBlack);
   z-index: 2;
 }        
@@ -189,6 +191,7 @@ h2 {
 
 .colorChange {
   background-color: transparent;
+  color: var(--primaryBlack) !important;
 }
 
 .nav-main {
@@ -198,8 +201,6 @@ h2 {
   width: 100%;
   max-width: 1000px;
   padding: 0 10px;
-  /* the above padding was 50px - @10px menu & logo don't touch content and sit just outside content on desktop */
-  /* margin: 0 auto; */
 }
 
 .nav-main-right {
@@ -217,11 +218,13 @@ h2 {
 }
 
 .p2-nav {
-  /* color: var(--secondaryColor); */
   color: var(--primaryBlack);
+  /* color: var(--mainWhite); */
   font-size: .8em;
   line-height: 1.3em; 
+  letter-spacing: .05rem;
 }
+
 
 .open {
   color: var(--secondaryColor) !important;
@@ -280,15 +283,28 @@ h2 {
 
 .navBar-link {
  font-family: "Roboto", sans-serif;
- font-size: 1rem;
+ font-size: .8rem;
  text-decoration: none;
  color: var(--primaryBlack);
  font-weight: bold;
  transition: all .2s ease-in-out;
+ text-transform: uppercase;
+ letter-spacing: .1rem;
 }
 
 .navBar-link:hover {
   color: var(--secondaryColor);
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {  
+    width: 100vw;
+  }
+ .nav-main {
+   padding: 0 10px;
+   max-width: 100vw;
+   margin: 0;
+ }
 }
 
 
@@ -298,10 +314,6 @@ h2 {
     max-width: 100vw;
     margin: 0;
   }
-
-  /* .p2-nav {
-    padding-right: 10px;
-  } */
 }
   /* Navbar media queries end */
 /* Navbar end */
@@ -416,16 +428,23 @@ h2 {
   text-align: left;
   }
 
-  .titleLong-two {
-    margin-left: 18vw;
-  }
-
    .bannerLong-text {
      grid-row: 4 / 6;
      grid-column: 2 / 4;
      padding: 50px 0;
      text-align: left;
    }
+
+  .title-one, .titleLong-one {
+    grid-column: 1 / 5;
+    text-align: center;
+    }
+  
+    .title-two,
+    .titleLong-two {
+      grid-column: 1 / 5;
+      text-align: center;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -677,7 +696,18 @@ background-color: var(--primaryColor);
 
 .expect-wrapper-item {
   padding: 15px;
-  max-width: 150px;
+  max-width: 250px;
+}
+
+.p2-expect{
+  padding: 10px 10px 10px 40px;
+}
+
+@media screen and (max-width:798px) {
+
+  .expect-wrapper {
+    max-width: 768px;
+  }
 }
 /* CTA start */
 

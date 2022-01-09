@@ -12,15 +12,13 @@ function Navbar() {
   };
 
   const [colorChange, setColorchange] = useState(false);
-  const [menuColor, setMenuColor] = useState(false);
+  
   const changeNavbarColor = () =>{
-     if(window.scrollY >= 60){
+     if(window.scrollY >= 10){
        setColorchange(true);
-       setMenuColor(true);
      }
      else{
        setColorchange(false);
-       setMenuColor(false);
      }
   };
   window.addEventListener('scroll', changeNavbarColor);
@@ -36,7 +34,7 @@ function Navbar() {
         </div>
         <div className="nav-main-right">
           <button  className='nav-btn'>
-            <p className={open ? 'p2-nav open' : 'p2-nav'} onClick={showOpen}>Menu</p>
+            <p className={open ? 'p2-nav open' : 'p2-nav'} onClick={showOpen}>MENU</p>
           </button>
         </div>
         

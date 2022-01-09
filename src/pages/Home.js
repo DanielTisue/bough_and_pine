@@ -43,20 +43,20 @@ export default function Home() {
         </section>
     </div>
         <section className="cta cta2">
-          <Title title="What to Expect" subtitle="The How" />
+          <Title title="Get Started" subtitle="The How" />
           <div className="expect">
             <ul className="expect-wrapper">
               <li className="expect-wrapper-item">
                 <h1 class="cta2-title">01</h1>
-                <p className="p2">Book a call and discuss options</p>
+                <p className="p2 p2-expect" >Schedule a call on the calendar view below to discuss design options</p>
               </li>
               <li className="expect-wrapper-item">
                 <h1 class="cta2-title">02</h1>
-                <p className="p2">Be ready to <br/> answer questions</p>
+                <p className="p2 p2-expect" >Receive a confirmation of your free consultation with a confimation email</p>
               </li>
               <li className="expect-wrapper-item">
                 <h1 class="cta2-title">03</h1>
-                <p className="p2" >Be ready to <br/> answer questions</p>
+                <p className="p2 p2-expect" >Have your space viewed to discuss potential designs</p>
               </li>
             </ul>
           </div>
