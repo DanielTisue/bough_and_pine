@@ -3,9 +3,7 @@ import items from './data';
 
 const RoomContext = React.createContext();
 
-//getData - ran when component mounted
-
-export default class RoomProvider extends Component {
+class RoomProvider extends Component {
   state = {
     rooms: [],
     sortedRooms: [],

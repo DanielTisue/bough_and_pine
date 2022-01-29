@@ -33,7 +33,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="nav-main-right">
-          <button  className='nav-btn'>
+          <button className="nav-btn">
             <p className={open ? 'p2-nav open' : 'p2-nav'} onClick={showOpen}>MENU</p>
           </button>
         </div>

@@ -166,7 +166,7 @@ export default [
       name: "dining",
       slug: "dining",
       type: "home",
-      featured: true,
+      featured: false,
       images: [
         {
           fields: {
