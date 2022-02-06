@@ -74,8 +74,8 @@ export default [
       id: "2"
     },
     fields: {
-      name: "entry-hallway",
-      slug: "entry-hallway",
+      name: "entry hallway",
+      slug: "entry hallway",
       type: "home",
       featured: true,
       images: [
@@ -101,8 +101,8 @@ export default [
       id: "3"
     },
     fields: {
-      name: "living-room",
-      slug: "living-room",
+      name: "living room",
+      slug: "living room",
       type: "home",
       featured: true,
       images: [
@@ -166,7 +166,7 @@ export default [
       name: "dining",
       slug: "dining",
       type: "home",
-      featured: false,
+      featured: true,
       images: [
         {
           fields: {
@@ -190,8 +190,8 @@ export default [
       id: "5"
     },
     fields: {
-      name: "baby-room",
-      slug: "baby-room",
+      name: "baby room",
+      slug: "baby room",
       type: "home",
       featured: false,
       images: [
