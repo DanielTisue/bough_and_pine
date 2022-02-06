@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import items from './data';
+import items from './data'; //used items because of context.js
 
 const RoomContext = React.createContext();
 
@@ -13,6 +13,7 @@ class RoomProvider extends Component {
     
 componentDidMount() {
     let rooms = this.formatData(items);
+    //filter the rooms based on whether or the the featured property is labeled as true
     let featuredRooms = rooms.filter(room => room.featured === true);
     this.setState({
       rooms,
@@ -25,10 +26,13 @@ componentDidMount() {
 
 formatData(items){
   let tempItems = items.map(item => {
-    let id = item.sys.id;
-    let images = item.fields.images.map(image => image.fields.file.url);
-    let room = { ...item.fields, images, id };
-    return room;
+      let id = item.sys.id;
+      //images are accesible through the fields object property within items object
+      //then need to map over those images
+      let images = item.fields.images.map(image => image.fields.file.url);
+      //create a simple new room object
+      let room = { ...item.fields, images, id };
+      return room;
   });
   return tempItems;
 }
