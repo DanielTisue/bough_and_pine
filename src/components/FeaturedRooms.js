@@ -7,12 +7,12 @@ export default class FeaturedRooms extends Component {
   static contextType = RoomContext;
 
   render() {
-    let { loading, featuredRooms : rooms } = this.context;
+    let { loading, featuredRooms: rooms } = this.context;
     rooms = rooms.map(room => {
       return <Room key={room.id} room={room} />
     })
     return (
-     <div className="featured-images-section">
+     <div className="featured-images-section my-50">
         { loading ? <Loading /> : rooms }
       </div>
     );

@@ -87,6 +87,26 @@ h2 {
   text-align: left;
 }
 
+.white {
+  color: var(--mainWhite) !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.all-caps {
+  text-transform: uppercase !important;
+}
+
+.add-spacing {
+  letter-spacing: .1rem;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
 .center-align {
   text-align: center !important;
 }
@@ -549,8 +569,15 @@ h2 {
   .banner-text, .bannerLong-text {
     grid-row: 4 / 6;
     grid-column: 1/ 6;
-    padding: 50px 10px;
     text-align: left;
+  }
+
+  .banner-text {
+    padding: 50px 10px;
+  }
+
+  .bannerLong-text {
+    padding: 50px 10px 0;
   }
 }
 
@@ -706,7 +733,7 @@ background-color: var(--primaryColor);
 }
 
 .cta2 {
-  padding-top: 25px;
+  padding-top: 100px;
 }
 
 .cta2-title {
@@ -720,7 +747,6 @@ background-color: var(--primaryColor);
 
 #cta-text-wrapper {
   padding: 1rem;
-  margin-top: 50px;
 }
 
 #cta-text {
@@ -731,7 +757,7 @@ background-color: var(--primaryColor);
   font-size: .7em;
   line-height: 1.3em;
   border: 1px solid var(--mainWhite);
-  transition: all .25s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #cta-text:hover {
@@ -771,6 +797,13 @@ background-color: var(--primaryColor);
   .expect-wrapper {
     max-width: 768px;
   }
+}
+
+@media screen and (max-width:480px) {
+
+  /* #cta-text-wrapper {
+    margin-top: 0px;
+  } */
 }
 /* CTA start */
 
@@ -861,42 +894,152 @@ background-color: var(--primaryColor);
 /* MQ Services end */
 /* End of Services */
 
+/* Start of Loader */
+.loading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-animation {
+  width: 200px;
+}
+
+/* MQ Loader start */
+@media screen and (max-width:480px) {
+  .loader-animation {
+    width: 100px;
+  }
+}
+
+/* MQ Loader end */
+/* End of Loader */
+
 /* Start of FeaturedRooms */
 
-.featuredRooms {
-  height: 100%;
+.featured-images-section {
+  display: flex;
+  flex-flow: wrap;
+  /* margin-left: 8px; */
+  width: 95%;
+  margin-left: 25px;
+  justify-content: center;
 }
 
-.featured-images-section {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 200px;
-  grid-auto-flow: dense;
-  margin: 0 auto;
+/* setting fixed height that matches the fixed height of the images to the div closes row gutter-gap of 5px */
+.featured-images {
+  flex: auto;
+  position: relative;
+  height: 350px;
+  min-width: 150px;
+  margin: 0 5px 5px 0;
+  overflow: hidden;
 }
+
+.featured-images:nth-child(4n+1):nth-child(4n+2) {
+  width: 325px;
+}
+
+.featured-images:nth-child(4n+1):nth-child(4n+3) {
+  width: 180px;
+}
+
+.featured-images:nth-child(4n+1):nth-child(4n+4) {
+  width: 380px;
+}
+
 
 .image-style {
   width: 100%;
-  max-width: 300px;
-  padding: 10px 0;
-  /* max-height: 200px; */
-}
-@media screen and (min-width: 776px) {
-  .featured-images-section {
-    
-  }
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-@media screen and (min-width: 992px) {
-  .featured-images-section {
-   
-  }
+.img-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(193, 154, 91, .8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.img-overlay:hover {
+  opacity: 1;
+}
+
+.img-overlay > * {
+  transform: translateY(20px);
+  transition: transform .2s;
+}
+
+.img-overlay:hover > * {
+  transform: translateY(0);
 }
 
 /* MQ Start of FeaturedRooms */
 
+@media screen and (max-width: 480px) {
+  .featured-images-section {
+    width: 100% !important;
+    margin-left: 0px !important;
+    padding: 0 !important;
+  }
 
+  .featured-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    padding: 10px;
+    flex: none;
+    overflow: visible;
+  }
+
+  .image-style {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+
+  .img-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+    background: rgba(193, 154, 91, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+    opacity: 1;
+    margin: 5px 0 10px 0;
+    /* padding: 10px 0; */
+  }
+
+  .img-overlay > * {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 798px) {
+   .featured-images-section {
+     width: 100%;
+     padding: 50px;
+     margin: 0;
+     /* margin-left: 20px; */
+   }
+}
 /* MQ End of FeaturedRooms */
 /* End of Services */
 
@@ -911,7 +1054,6 @@ background-color: var(--primaryColor);
 
 .left {
   width: 36%;
-  /* overflow-x: hidden !important; */
   overflow-x: visible !important;
 }
 

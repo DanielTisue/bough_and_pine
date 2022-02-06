@@ -28,7 +28,7 @@ export default function Home() {
           <Services />
         </section>
     </div>
-        <section className="cta">
+        <section className="cta pt-50">
           <Title title="Let's Design" subtitle="Consultation" />
           <a id="cta-text" href="#contact">Book now</a>
         </section>
@@ -45,20 +45,11 @@ export default function Home() {
     <div className="container">
      
        <section className="mb-100 featuredRooms">     
-        <Title title="Our Favorites" subtitle="recent projects" />
-       <div className="grid-wrapper my-50">
-        <h1>One</h1>
-        <h1>One</h1>
-        <h1>One</h1>
-        <h1>One</h1>
-        <h1>One</h1>
-        <h1>One</h1>
-        <h1>One</h1>
-        <h1>One</h1>
-       </div>
+        <Title title="Favorite" subtitle="projects" />
+        <FeaturedRooms />
       </section>
     </div>
-        <section className="cta cta2">
+        <section className="cta cta2 pt-100">
           <Title title="Get Started" subtitle="The How" />
           <div className="expect">
             <ul className="expect-wrapper">
