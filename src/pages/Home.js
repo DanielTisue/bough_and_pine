@@ -49,7 +49,7 @@ export default function Home() {
         <FeaturedRooms />
       </section>
     </div>
-        <section className="cta cta2 pt-100">
+        <section className="cta cta2">
           <Title title="Get Started" subtitle="The How" />
           <div className="expect">
             <ul className="expect-wrapper">
