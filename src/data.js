@@ -75,7 +75,7 @@ export default [
     },
     fields: {
       name: "entry hallway",
-      slug: "entry hallway",
+      slug: "entry-hallway",
       type: "home",
       featured: true,
       images: [
@@ -102,7 +102,7 @@ export default [
     },
     fields: {
       name: "living room",
-      slug: "living room",
+      slug: "living-room",
       type: "home",
       featured: true,
       images: [
@@ -191,7 +191,7 @@ export default [
     },
     fields: {
       name: "baby room",
-      slug: "baby room",
+      slug: "baby-room",
       type: "home",
       featured: false,
       images: [
