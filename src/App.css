@@ -664,7 +664,7 @@ h2 {
 }
 
 .main-image {
-  max-height: 450px;
+  max-width: 600px;
   padding-left: 50px;
   margin-left: 50px;
 }
@@ -924,8 +924,9 @@ background-color: var(--primaryColor);
   flex-flow: wrap;
   /* margin-left: 8px; */
   width: 95%;
-  margin-left: 25px;
+  margin-left: 22px;
   justify-content: center;
+  padding: 0 30px;
 }
 
 /* setting fixed height that matches the fixed height of the images to the div closes row gutter-gap of 5px */
@@ -988,6 +989,55 @@ background-color: var(--primaryColor);
 
 /* MQ Start of FeaturedRooms */
 
+@media screen and (max-width: 825px) {
+  /* .featured-images-section {
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+   
+  } */
+  .featured-images-section {
+    width: 100% !important;
+    margin-left: 0px !important;
+    padding: 0 50px !important;
+  }
+
+  .featured-images {
+    position: relative;
+    width: 75%;
+    height: auto;
+    margin: 30px 0;
+    padding: 10px;
+    flex: none;
+    overflow: visible;
+  }
+
+  .image-style {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+
+  .img-overlay {
+    position: relative;
+    height: 100%;
+    max-height: 50px;
+    background: rgba(193, 154, 91, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+    opacity: 1;
+    margin: 5px 0 10px 0;
+    /* padding: 10px 0; */
+  }
+
+  .img-overlay>* {
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .featured-images-section {
     width: 100% !important;
@@ -1032,14 +1082,6 @@ background-color: var(--primaryColor);
   }
 }
 
-@media screen and (max-width: 798px) {
-   .featured-images-section {
-     width: 100%;
-     padding: 50px;
-     margin: 0;
-     /* margin-left: 20px; */
-   }
-}
 /* MQ End of FeaturedRooms */
 /* End of Services */
 
@@ -1060,13 +1102,14 @@ background-color: var(--primaryColor);
 .right {
   width: 55%;
   padding-left: 100px;
+  margin-right: 20px;
 }
 
 .second-main-image {
   position: relative;
   left: -225px;
-  max-height: 450px;
-  margin-left: -25px;
+  max-width: 600px;
+  margin-left: -50px;
 }
 
 /* Process MQ start */
